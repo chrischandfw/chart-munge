@@ -27,13 +27,3 @@ const barChart = new Chart(
     config
 );
 console.log(makePurchaseFrequencyCountMap(customers));
-
-
-
-
-
-
-
-
-
-
