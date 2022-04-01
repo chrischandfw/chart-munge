@@ -1,5 +1,6 @@
-import { customers } from '../data';
-import { makePurchaseFrequencyCountMap, makeCoolFactorCountMap } from '../data-utils';
+/* eslint-disable indent */
+import { customers } from '../data.js';
+import { makePurchaseFrequencyCountMap, makeCoolFactorCountMap, makeGenderCountMap } from '../data-utils.js';
 
 const test = QUnit.test;
 
@@ -42,7 +43,7 @@ test('time to test a function for returning number of customers by cool factor',
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = makePurchaseFrequencyCountMap(customers);
+    const actual = makeCoolFactorCountMap(customers);
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -57,9 +58,9 @@ test('time to test a function for returning number of customers by cool factor',
 		Genderfluid: 18,
 		Genderqueer: 11,
 		Male: 448,
-		Non-binary: 24,
+		'Non-binary': 24,
 		Polygender: 11,
-    };
+};
     const expected = countMap3;
     
     //Act 
