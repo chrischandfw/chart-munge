@@ -33,3 +33,19 @@ export function makeCoolFactorCountMap() {
 
     return countMap2;
 }
+
+export function makeGenderCountMap() {
+    const countMap3 = {};
+
+    for (let customer of customers) {
+        const coolFactor = customer.gender;
+
+        if (countMap3[coolFactor]) {
+            countMap3[coolFactor]++;
+        } else {
+            countMap3[coolFactor] = 1;
+        }
+    }
+
+    return countMap3;
+}
