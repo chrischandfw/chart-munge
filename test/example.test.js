@@ -51,3 +51,27 @@ test('time to test a function for returning number of customers by cool factor',
     expect.deepEqual(actual, expected);
 });
 
+const test = QUnit.test;
+
+test('time to test a function for returning number of customers by cool factor', (expect) => {
+    const countMap3 = {
+		Agender: 17
+		Bigender: 14
+		Female: 457
+		Genderfluid: 18
+		Genderqueer: 11
+		Male: 448
+		Non-binary: 24
+		Polygender: 11
+    };
+    const expected = countMap3;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = makeGenderCountMap(customers);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
