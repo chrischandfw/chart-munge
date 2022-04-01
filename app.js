@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { customers } from './data.js';
 import { makePurchaseFrequencyCountMap } from './data-utils.js';
 
